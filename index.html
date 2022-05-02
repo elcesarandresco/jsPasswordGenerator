@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="password-box">
+            <form>
+                <label>
+                    Num of characters
+                    <input type="number" name="passwordNumCh" id="passwordNumCh" maxlength="2" max="16" min="8" value="8">
+                </label>
+                <label>
+                    <input type="checkbox" name="symbols" id="symbols">
+                    Insert Symbols
+                </label>
+                <label>
+                    <input type="checkbox" name="cLetters" id="cLetters">
+                    Insert capital letters
+                </label>
+                <input type="button" value="Generate" name="btn" id="btn">
+            </form>
+            <fieldset class="passwordResult" id="result">
+                <legend>Your password</legend>
+                xdasdasdasda
+            </fieldset>
+        </div>
+        
+    </div><script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./src/script.js"></script>
+</body>
+</html>
