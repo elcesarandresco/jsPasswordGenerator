@@ -1,0 +1,165 @@
+* {
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(97, 97, 97);
+
+}
+
+body {
+
+    background-color: #55a630;
+
+}
+
+body::before {
+
+    content: "";
+    background-image: url('https://raw.githubusercontent.com/elcesarandresco/practicoJS/main/taller2/img/background.png');
+    background-size: 500px;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+}
+
+.container {
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.password-box {
+
+    position: absolute;
+    background-color: white;
+    height: 450px;
+    width: 300px;
+    padding: 40px;
+    border-radius: 20px;
+    display: inherit;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.password-box h1 {
+
+    font-size: 25px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 12px;
+
+}
+
+.password-box form {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.password-box form .password-box__container {
+
+    display: inherit;
+    flex-direction: column;
+    background-color: #d4d700;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+
+.password-box form .password-box__container .numbers {
+
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.password-box form .password-box__container .numbers span {
+
+    margin-bottom: 8px;
+
+}
+
+.password-box form input {
+
+    color: black;
+
+}
+
+.password-box form .password-box__container .numbers input{
+
+    width: 100%;
+    text-align: center;
+    margin-bottom: 12px;
+    padding: 8px;
+    font-size: 20px;
+    border-radius: 30px;
+    border: none;
+    background-color: #ffffff3a;
+    outline: none;
+
+}
+
+.password-box form .password-box__container .check {
+
+    margin-bottom: 4px;
+
+}   
+
+.password-box form input[type="button"] {
+
+    border: none;
+    background-color: #007f5f;
+    color: white;
+    cursor: pointer;
+    padding: 8px 0px;
+    border-radius: 35px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 12px
+    
+}
+
+.password-box .passwordResult {
+
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 10px;
+    border: 3px dashed #007f5f
+
+}
+
+.password-box .passwordResult p {
+
+    color: rgb(194, 194, 194);
+    cursor: pointer;
+
+}
+
+.password-box .passwordResult legend {
+
+    padding: 0px 20px;
+
+
+}
+
+
+
+
+
+
+
+
+
+

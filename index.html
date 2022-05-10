@@ -4,29 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/styles.css">
     <title>Password Generator</title>
 </head>
 <body>
     <div class="container">
         <div class="password-box">
+            <h1>Secure Password Generator</h1>
             <form>
-                <label>
-                    Num of characters
+                <div class="password-box__container">
+                    <label class="numbers">
+                        <span>Num of characters</span>
                     <input type="number" name="passwordNumCh" id="passwordNumCh" maxlength="2" max="16" min="8" value="8">
-                </label>
-                <label>
-                    <input type="checkbox" name="symbols" id="symbols">
-                    Insert Symbols
-                </label>
-                <label>
-                    <input type="checkbox" name="cLetters" id="cLetters">
-                    Insert capital letters
-                </label>
+                    </label>
+                    <label class="check">
+                        <input type="checkbox" name="symbols" id="symbols">
+                        Insert Symbols
+                    </label>
+                    <label class="check">
+                        <input type="checkbox" name="cLetters" id="cLetters">
+                        Insert capital letters
+                    </label>
+                </div>
                 <input type="button" value="Generate" name="btn" id="btn">
             </form>
-            <fieldset class="passwordResult" id="result">
+            <fieldset class="passwordResult">
                 <legend>Your password</legend>
-                xdasdasdasda
+                <p id="result">
+                    1234Password
+                </p>
             </fieldset>
         </div>
         

@@ -3,6 +3,7 @@ let symbols = document.getElementById('symbols')
 let cLetters = document.getElementById('cLetters')
 let btn = document.getElementById('btn')
 let pass = document.getElementById('result')
+let passwordGenerated
 
 class Password {
     constructor(){
@@ -45,6 +46,7 @@ class Password {
     }
     #show(password){
         pass.innerText = password
+        passwordGenerated = password
         console.log(password)
     }    
 }
@@ -54,7 +56,7 @@ const init = () => {
     console.log("Inició")
     let password = new Password()
     password.create(characters.value, symbols.checked, cLetters.checked)
-    swal("Ready!", "Your password has been created", "success");
+    swal("Ready!", `Your password: ${passwordGenerated} has been created`, "success");
 
 }  
 
